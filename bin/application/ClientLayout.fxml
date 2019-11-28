@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <ScrollPane layoutX="70.0" layoutY="99.0" prefHeight="104.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <VBox prefWidth="347.0">
+               <children>
+                  <Label fx:id="state" prefWidth="347.0" wrapText="true" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="111.0" layoutY="14.0" text="채팅서버">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="startAndStop" layoutX="180.0" layoutY="12.0" mnemonicParsing="false" onAction="#bStart" text="서버 시작" />
+   </children>
+</AnchorPane>
